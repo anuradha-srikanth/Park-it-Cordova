@@ -1,0 +1,31 @@
+<html>
+<head>
+    
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <!-- <link type="text/css" rel="stylesheet" href="css/ios.css"> -->
+    <!-- <link type="text/css" rel="stylesheet" href="ios.css"> -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBckyW2tqYhKMEKH_6LNlfbmSVA4qGV6DI" type="text/javascript"> </script>
+    <!-- <script src="script.js" type="text/javascript"></script> -->
+    <script src="cordova.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+</head>
+<body onLoad="init()">
+
+<div id="navbar">
+<button id="park" onClick="setParkingLocation()"> Park </button>
+Park It
+<button id="retrieve" onClick="getParkingLocation()"> Find </button>
+
+<div id="container">
+    <div id="instructions">
+        <p> Click the Park button to set the Parking Location </p>
+        <p> Click the Find button to retrieve the Parking Location </p>
+        <p style="text-align: center"><button id="gotIt" onClick="setCss('instructions', 'display','none')"> Got It </button>
+        </p>
+    </div>
+    <div id="map"> </div>
+    <div id="directions"> </div>
+</div>
+</body>
+</html>
+
